@@ -12,6 +12,15 @@ Journal: ACM TOG\
 Conference: SIGGRAPH ASIA 2022
 
 
+## To use
+```
+git clone https://github.com/bush-21/ref2sketch
+cd ref2sketch/ref2sketch/
+conda create -n ref2sketch python==3.8
+conda activate ref2sketch
+conda install matplotlib
+pip install opencv-python
+```
         
 ## Train
     $ python main.py --mode train_deep \
@@ -28,13 +37,10 @@ Conference: SIGGRAPH ASIA 2022
 
 
 ## Test
-    $ python test.py --name_weight [weight_file] \
-                     --name_data examples \
-                     --direction A2B \
-                     --cuda
-
-* Download the pretrained model from google drive
-https://drive.google.com/drive/folders/1OvU4pPVTFk07Kp5qKS6MNlsKhoUUckcR?usp=sharing
+```
+python test.py --name_weight ref2sketch_deep --name_data examples --direction a2b --cuda
+```
+* Download the pretrained model from [google drive](https://drive.google.com/drive/folders/1OvU4pPVTFk07Kp5qKS6MNlsKhoUUckcR?usp=sharing) and put it in the dir `checkpoint/`
 * Pretrained model "ref2sketch" produce results same as experiments on paper, however we recommend to use "ref2sketch_deep" for better quality output.
 
 
