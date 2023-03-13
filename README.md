@@ -42,7 +42,11 @@ python test.py --name_weight ref2sketch_deep --name_data examples --direction a2
 ```
 * Download the pretrained model from [google drive](https://drive.google.com/drive/folders/1OvU4pPVTFk07Kp5qKS6MNlsKhoUUckcR?usp=sharing) and put it in the dir `checkpoint/`
 * Pretrained model "ref2sketch" produce results same as experiments on paper, however we recommend to use "ref2sketch_deep" for better quality output.
+```
+python demo.py --name_weight ref2sketch_deep --cuda --image_dir [path1] --style_image_dir [path2] --out_dir [path3]
 
+```
+You can use this command to select the folder you want.You can use `python demo.py --help` to get help. 
 
 ## Dataset
 * Due to the regulation of twitter, we share each url of twitter dataset used in our paper. You can find twitter_dataset.json file from dataset folder.
