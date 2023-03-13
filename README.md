@@ -44,7 +44,6 @@ python test.py --name_weight ref2sketch_deep --name_data examples --direction a2
 * Pretrained model "ref2sketch" produce results same as experiments on paper, however we recommend to use "ref2sketch_deep" for better quality output.
 ```
 python demo.py --name_weight ref2sketch_deep --cuda --image_dir [path1] --style_image_dir [path2] --out_dir [path3]
-
 ```
 You can use this command to select the folder you want.You can use `python demo.py --help` to get help. 
 
