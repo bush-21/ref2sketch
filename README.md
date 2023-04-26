@@ -21,6 +21,9 @@ conda activate ref2sketch
 pip install -r requirements.txt
 conda install matplotlib
 pip install opencv-python
+conda install scikit-image
+conda install tensorboard
+pip install chardet
 ```
         
 ## Train
