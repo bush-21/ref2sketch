@@ -18,6 +18,7 @@ git clone https://github.com/bush-21/ref2sketch
 cd ref2sketch/ref2sketch/
 conda create -n ref2sketch python==3.8
 conda activate ref2sketch
+pip install -r requirements.txt
 conda install matplotlib
 pip install opencv-python
 ```
